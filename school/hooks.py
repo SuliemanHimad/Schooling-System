@@ -1,9 +1,12 @@
+
+
 app_name = "school"
 app_title = "School"
 app_publisher = "himadwise"
 app_description = "School LMS"
 app_email = "himadwise@gmail.com"
 app_license = "mit"
+
 
 # Apps
 # ------------------
