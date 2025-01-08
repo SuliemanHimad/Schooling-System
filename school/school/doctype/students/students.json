@@ -9,12 +9,17 @@
   "first_name",
   "middle_name",
   "last_name",
+  "dob",
+  "age",
   "column_break_ewcc",
   "full_name",
+  "is_minor",
   "grade",
   "subjects",
+  "family_members",
   "section_break_lwnc",
-  "address"
+  "address",
+  "amended_from"
  ],
  "fields": [
   {
@@ -65,11 +70,44 @@
    "fieldname": "last_name",
    "fieldtype": "Data",
    "label": "Last Name"
+  },
+  {
+   "fieldname": "family_members",
+   "fieldtype": "Table",
+   "label": "Family Members",
+   "options": "Family Member"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Students",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_minor",
+   "fieldtype": "Data",
+   "label": "Is Minor"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-01-07 16:11:50.850814",
+ "modified": "2025-01-08 16:02:42.300711",
  "modified_by": "Administrator",
  "module": "School",
  "name": "Students",
@@ -88,7 +126,10 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "first_name",
+ "translated_doctype": 1
 }

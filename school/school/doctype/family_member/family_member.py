@@ -5,6 +5,5 @@
 from frappe.model.document import Document
 
 
-class Students(Document):
-    def validate(self):
-        frappe.msgprint("Please enter your students")
+class FamilyMember(Document):
+	pass

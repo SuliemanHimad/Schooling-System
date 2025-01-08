@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const API_BASE_URL = 'http://127.0.0.1:8004/api/method';
-
+// kani waa api ga aan aadayo base url kiisa 
+// kan hadda tijaabo ahaan ayaan u sameeyay
 const instance = axios.create({
   baseURL: API_BASE_URL,
   headers: {

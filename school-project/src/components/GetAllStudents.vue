@@ -21,6 +21,7 @@
           <td>{{ student.grade }}</td>
           <td>{{ student.subjects }}</td>
           <td>{{ student.address }}</td>
+          
           <td>
             <button @click="deleteStudent(student.name)">Delete</button>
             <button class="btn">
