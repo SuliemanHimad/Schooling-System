@@ -8,3 +8,5 @@ from frappe.model.document import Document
 class Students(Document):
     def validate(self):
         frappe.msgprint("Please enter your students")
+    def befire_submitted(self):
+        frappe.msgprint("Student record submitted successfully")

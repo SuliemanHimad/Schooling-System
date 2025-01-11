@@ -74,5 +74,13 @@ frappe.ui.form.on("Students", {
     // after_cancel:function(frm){
     //     frappe.msgprint("After Cancel is triggered")
     // }
-
+    onload:function(frm){
+        frm.set_query("paid_by", function(){
+            return {
+                "filters": {
+                    "ignore_user_type":1
+                }
+            }
+        })
+    }
 });
